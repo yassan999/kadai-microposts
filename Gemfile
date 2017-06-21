@@ -17,6 +17,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'kaminari'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 gem 'haml-rails', '~> 0.9.0'
+gem 'carrierwave'
+gem 'rmagick'
 group :development, :test do
   gem 'byebug', platform: :mri
 end

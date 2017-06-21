@@ -13,6 +13,13 @@
             <p><%= micropost.content %></p>
           </div>
           <div>
+            <% if micropost.image? %>
+　         　<%= image_tag micropost.image.thumb.url %>
+　          <% else %>
+　          　<%= image_tag 'noimage.gif' %>
+          　<% end %>
+          </div>
+          <div>
             <%= render 'favorites/favo_button', user: user, micropost: micropost %>
           </div>
           <div>

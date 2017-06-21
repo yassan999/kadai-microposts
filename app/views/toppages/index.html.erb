@@ -5,6 +5,10 @@
       <%= form_for(@micropost) do |f| %>
         <div class="form-group">
           <%= f.text_area :content, class: 'form-control', rows: 5 %>
+          
+          <%= f.label :image %>
+          
+　　      <%= f.file_field :image %>
         </div>
         <%= f.submit 'post', class: 'btn btn-primary btn-block' %>
         <%= link_to 'favo一覧', favorites_path, class: 'btn btn-primary btn-block' %>
